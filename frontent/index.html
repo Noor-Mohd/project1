@@ -2,73 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gamified Campus Platform</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Gamified Cucek</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1>Gamified Campus</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li> 
-          <li><a href="#">Challenges</a></li>
-          <li><a href="#">Leaderboard</a></li>
-          <li><a href="login.html">Profile</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h2>Welcome to Gamified Campus!</h2>
-      <p>Complete challenges, earn points, and climb the leaderboard.</p>
-      <a href="challenges.html" class="btn">Join a Challenge</a>
-    </div>
-  </section>
-
-  <!-- Dashboard Section -->
-  <section class="dashboard">
-    <div class="container">
-      <h2>Your Dashboard</h2>
-      <div class="profile-summary">
-        <img src="https://via.placeholder.com/100" alt="User Avatar" class="avatar">
-        <div class="details">
-          <h3>Level 5</h3>
-          <p>1200 Points</p>
-          <div class="progress-bar">
-            <div class="progress" style="width: 75%;"></div>
-          </div>
-        </div>
-      </div>
-      <div class="badges">
-        <h3>Badges</h3>
-        <div class="badge-list">
-          <span class="badge">🏆 Top Performer</span>
-          <span class="badge">📚 Bookworm</span>
-          <span class="badge">🏅 Sports Enthusiast</span>
-        </div>
-      </div>
-      <div class="leaderboard-preview">
-        <h3>Leaderboard</h3>
-        <ol>
-          <li>User A - 1000pts</li>
-          <li>User B - 950pts</li>
-          <li>User C - 900pts</li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Gamified Campus. All rights reserved.</p>
-    </div>
-  </footer>
+      <div id="message">Hello ! Ak</div>
+  <div class="form-container">
+      <form id="login-form" class="form">
+          <h2>HELLO CUCEKIANS</h2>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" required>
+            
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+                <span class="show-hide">show</span>
+            </div>
+            <button type="submit" class="button">Login</button>
+            <div class="new_user">
+              <p>New User ?</p>
+              <span onclick="toggleSignUp()">SignUp</span>
+            </div>
+      </form>
+      
+      <form id="signup-form" class="form">
+         <h2>Signup</h2>
+            <div class="form-group">
+              <label for="signup-username">Username</label>
+              <input type="text" id="signup-username" name="signup-username" required>
+            </div>
+            <div class="form-group">
+              <label for="signup-password">Password</label>
+              <input type="password" id="signup-password" name="signup-password" required>
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit" class="button">Signup</button>
+            <div class="user_already_exist">
+              <p>Already have an account ?</p>
+              <span onclick="toggleLogin()">Login</span>
+            </div>
+      </form>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>

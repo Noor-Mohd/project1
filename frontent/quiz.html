@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Quiz - Gamified Campus</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Gamified Campus</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Challenges</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Quiz Section -->
+  <section class="quiz">
+    <div class="container">
+      <h2>Weekly Quiz</h2>
+      <p>Test your knowledge and earn points!</p>
+      <div id="quiz-container">
+        <!-- Quiz questions will be dynamically inserted here -->
+      </div>
+      <button id="submit-btn">Submit Quiz</button>
+      <div id="result" class="hidden">
+        <h3>Your Score: <span id="score"></span></h3>
+        <p id="feedback"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Gamified Campus. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
