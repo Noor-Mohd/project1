@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamified Campus Platform</title>
+  <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gamified Campus Platform</h1>
+
+    <!-- Login/Register Section -->
+    <div id="auth-section">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="register()">Register</button>
+      <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Challenges Section -->
+    <div id="challenges-section" class="hidden">
+      <h2>Challenges</h2>
+      <ul id="challenges-list"></ul>
+    </div>
+
+    <!-- Leaderboard Section -->
+    <div id="leaderboard-section" class="hidden">
+      <h2>Leaderboard</h2>
+      <ul id="leaderboard-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

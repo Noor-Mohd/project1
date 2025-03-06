@@ -1,0 +1,132 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+#message {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  background-color: red;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#message.show {
+  opacity: 1;
+}
+
+body{
+  height:100vh;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center ;
+}
+  .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  width:100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin:5px auto;
+  font-weight:800;
+}
+.user_already_exist,.new_user{
+  display:flex;
+  align-items: center;
+  width:100%;
+  gap:10px;
+  justify-content: center ;
+  margin-top:10px;
+}
+.user_already_exist p,.new_user p{
+  font-size:16.5px;
+  font-weight:600;
+  color:#9D9D9D;
+  
+}
+.user_already_exist span,.new_user span{
+  font-size: 15px;
+  font-weight:600;
+  color:#4856F6;
+}
+#signup-form{
+  display: none;
+}
+.show-hide{
+  position:relative;
+  z-index:1111;
+  top:-36px;
+  left:165px;
+  height:34px;
+  line-height: 35px;
+  width:40px;
+  background:#fff;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-size:13px;
+  font-weight:900;
+  color:#4856F6;
+}
+#login-form{
+  opacity:0;
+  transition: 0.7s ease;
+}
